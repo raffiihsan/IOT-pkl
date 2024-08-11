@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Smart Farm CP</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Home Panel -->
+    <section id="home" class="panel">
+        <h1>Smart Farming Controll panel</h1>
+        <div class="sensors">
+            <div class="sensor">
+                <h2>DHT11 Sensor</h2>
+                <p>Temperature: <span id="sensor1-value">N/A</span> °C</p>
+                <p>Humidity: <span id="sensor1-humidity">N/A</span> %</p>
+            </div>
+            <div class="sensor">
+                <h2>TDS Sensor</h2>
+                <p>TDS Value: <span id="sensor2-value">N/A</span> ppm</p>
+            </div>
+            <div class="sensor">
+                <h2>DS18B20 Sensor</h2>
+                <p>Soil Temperature: 
+                    <span id="sensor3-value-celsius">N/A</span> °C |
+                    <span id="sensor3-value-fahrenheit">N/A</span> °F |
+                    <span id="sensor3-value-kelvin">N/A</span> K
+                </p>
+            </div>
+            <div class="sensor">
+                <h2>PH Sensor</h2>
+                <p>PH Value: <span id="sensor4-value">N/A</span>PH</p>
+            </div>
+            
+        </div>
+        <div id="box" class="container">
+            <button id="btn">Stop</button>
+        </div>
+        <p class="button-description">Klik tombol ini untuk menonaktifkan sistem alarm.</p>
+    </section>
+
+    <!-- About Panel -->
+    <section id="about" class="panel">
+        <div class="divider"></div>
+        <h1>About This Dashboard</h1>
+        <p>Dashboard IoT ini dirancang untuk mendukung implementasi <strong>smart farming</strong>, sebuah pendekatan modern dalam pertanian yang memanfaatkan teknologi untuk meningkatkan efisiensi dan produktivitas.</p>
+        <h2>Sensor yang Digunakan:</h2>
+        <ul class="sensor-list">
+            <li><strong>DHT11 Sensor:</strong> Mengukur suhu dan kelembaban udara. Data ini penting untuk memantau kondisi lingkungan tanaman.</li>
+            <li><strong>TDS Sensor:</strong> Mengukur Total Dissolved Solids (TDS) dalam air, yang memberikan indikasi tingkat kesuburan dan kualitas air irigasi.</li>
+            <li><strong>DS18B20 Sensor:</strong> Sensor suhu digital yang digunakan untuk mengukur suhu tanah, membantu dalam menentukan kondisi optimal untuk pertumbuhan tanaman.</li>
+            <li><strong>PH Sensor:</strong> Dapat disesuaikan sesuai kebutuhan, misalnya sensor cahaya atau sensor kelembaban tanah tambahan.</li>
+        </ul>
+        <h2>Smart Farming:</h2>
+        <p><strong>Smart farming</strong> memanfaatkan data real-time dari berbagai sensor untuk membuat keputusan yang lebih baik dalam manajemen pertanian. Dengan memonitor parameter seperti suhu, kelembaban, dan kualitas air, petani dapat mengoptimalkan penggunaan sumber daya, meningkatkan hasil panen, dan mengurangi dampak lingkungan.</p>
+        <div class="divider"></div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Smart Farm CP. All Rights Reserved.</p>
+    </div>
+
+    <script src="asset/script.js"></script>
+</body>
+</html>
